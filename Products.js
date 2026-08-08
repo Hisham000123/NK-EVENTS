@@ -98,7 +98,7 @@ function displayProducts(products) {
                         ${title}
 
                         <a
-                            href="main.html#contact"
+                            href="index.html#contact"
                             class="btn mt-auto">
                             Enquire Now
                         </a>
