@@ -231,6 +231,9 @@ font-family: "Lora", serif;
 .featured-item:hover .rental-icon i {
     color: #fff;
 }
+.featured-item:hover .rental-icon span {
+    color: #fff;
+}
 
 
 /* ========================================
