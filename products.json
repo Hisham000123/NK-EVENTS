@@ -1,5 +1,29 @@
 {
   "products": [
+    {
+      "id": 37,
+      "name": "Aluminium Uruli",
+      "category": "catering",
+      "image": "images/ALUMINUM-URULI-1.png"
+    },
+    {
+      "id": 39,
+      "name": "Barrel",
+      "category": "catering",
+      "image": "images/barrel.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Brass Rounder Uruli",
+      "category": "catering",
+      "image": "images/brass-rounder-urli.webp"
+    },
+    {
+     "id": 56,
+      "name": "steeel Jug",
+      "category": "catering",
+      "image": "images/image-removebg-preview (1).png"
+    },
 
     {
       "id": 1,
@@ -61,24 +85,7 @@
       "category": "catering",
       "image": "images/ALFAHAM-GRILL.png"
     },
-    {
-      "id": 37,
-      "name": "Aluminium Uruli",
-      "category": "catering",
-      "image": "images/ALUMINUM-URULI-1.png"
-    },
-    {
-      "id": 39,
-      "name": "Barrel",
-      "category": "catering",
-      "image": "images/barrel.jpg"
-    },
-    {
-      "id": 40,
-      "name": "Brass Rounder Uruli",
-      "category": "catering",
-      "image": "images/brass-rounder-urli.webp"
-    },
+    
     {
       "id": 43,
       "name": "Chemb",
