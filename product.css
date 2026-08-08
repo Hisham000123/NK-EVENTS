@@ -1,0 +1,51 @@
+body {
+    font-family: 'Alegreya', serif;
+}
+
+#product {
+    background-color: #dbcbd3;
+}
+
+.product-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.stage-image {
+    object-fit: cover;
+}
+
+.normal-image {
+    object-fit: contain;
+}
+.product-card .btn {
+    background-color: #d190d1;
+    border-color: #f5eff5;
+}
+
+.product-card .btn:hover {
+    background-color: #b82b70;
+    border-color: #b82b70;
+}
+#searchInput {
+    border-radius: 30px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+#searchInput:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 132, 0.15);
+}

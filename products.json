@@ -1,0 +1,337 @@
+{
+  "products": [
+    
+    {
+      "id": 4,
+      "name": "Round Chemb",
+      "category": "catering",
+      "image": "images/round-chemb.webp"
+    },
+    {
+      "id": 5,
+      "name": "Cooking Stove",
+      "category": "catering",
+      "image": "images/stove-3.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cooking Stove",
+      
+      "category": "catering",
+      "image": "images/stove.webp"
+    },
+    {
+      "id": 7,
+      "name": "Tea Urn",
+      "category": "catering",
+      "image": "images/TEA-URNS-1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Wash Basin",
+      "category": "catering",
+      "image": "images/wash.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Waste Cover Stand",
+      "category": "catering",
+      "image": "images/WASTE-COVER-STAND.jpg"
+    },
+
+    {
+      "id": 10,
+      "name": "Red Chair",
+      "category": "event",
+      "image": "images/red-chair.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Brown Sofa",
+      "category": "event",
+      "image": "images/sofa-brown.jpg"
+    },
+    {
+      "id": 12,
+      "name": "White Sofa",
+      "category": "event",
+      "image": "images/white-sofa.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Plastic Jug",
+      "category": "catering",
+      "image": "images/PLASTIC-JUG.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Plastic Kotta",
+      "category": "catering",
+      "image": "images/plastic-kotta.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Puttu Maker",
+      "category": "catering",
+      "image": "images/PUTTU-MAKER-1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Stool",
+      "category": "event",
+      "image": "images/stool.webp"
+    },
+    {
+      "id": 14,
+      "name": "Table & Leg",
+      "category": "event",
+      "image": "images/table-leg.png"
+    },
+    {
+      "id": 15,
+      "name": "Steel Counter",
+      "category": "event",
+      "image": "images/steel-counter.png"
+    },
+    {
+      "id": 16,
+      "name": "Wood Counter",
+      "category": "event",
+      "image": "images/wood-counter.png"
+    },
+    {
+      "id": 17,
+      "name": "Stage Decoration 1",
+      "category": "stage",
+      "image": "images/s1.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Stage Decoration 2",
+      "category": "stage",
+      "image": "images/s2.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "Stage Decoration 3",
+      "category": "stage",
+      "image": "images/s3.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Stage Decoration 4",
+      "category": "stage",
+      "image": "images/s4.jpeg"
+    },
+    {
+      "id": 21,
+      "name": "Stage Decoration 5",
+      "category": "stage",
+      "image": "images/s5.jpeg"
+    },
+    {
+      "id": 22,
+      "name": "Stage Decoration 6",
+      "category": "stage",
+      "image": "images/s6.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "Stage Decoration 7",
+      "category": "stage",
+      "image": "images/s7.jpeg"
+    },
+    {
+      "id": 24,
+      "name": "Stage Decoration 8",
+      "category": "stage",
+      "image": "images/s8.jpeg"
+    },
+    {
+      "id": 25,
+      "name": "Stage Decoration 9",
+      "category": "stage",
+      "image": "images/s9.jpeg"
+    },
+    {
+      "id": 26,
+      "name": "Stage Decoration 10",
+      "category": "stage",
+      "image": "images/s10.jpeg"
+    },
+    {
+      "id": 27,
+      "name": "Stage Decoration 11",
+      "category": "stage",
+      "image": "images/s11.jpeg"
+    },
+    {
+      "id": 28,
+      "name": "Stage Decoration 12",
+      "category": "stage",
+      "image": "images/s12.jpeg"
+    },
+    {
+      "id": 29,
+      "name": "Stage Decoration 13",
+      "category": "stage",
+      "image": "images/s13.jpeg"
+    },
+    {
+      "id": 30,
+      "name": "Stage Decoration 14",
+      "category": "stage",
+      "image": "images/s14.jpeg"
+    },
+    {
+      "id": 31,
+      "name": "Stage Decoration 15",
+      "category": "stage",
+      "image": "images/s15.jpeg"
+    },
+    {
+      "id": 32,
+      "name": "Stage Decoration 16",
+      "category": "stage",
+      "image": "images/s16.jpeg"
+    },
+    {
+      "id": 33,
+      "name": "Stage Decoration 17",
+      "category": "stage",
+      "image": "images/s17.jpeg"
+    },
+    {
+      "id": 34,
+      "name": "Stage Decoration 18",
+      "category": "stage",
+      "image": "images/s18.jpeg"
+    },
+    {
+      "id": 35,
+      "name": "Stage Decoration 19",
+      "category": "stage",
+      "image": "images/s19.jpeg"
+    },
+    {
+      "id": 36,
+      "name": "Chicken Grill",
+      "category": "catering",
+      "image": "images/ALFAHAM-GRILL.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Aluminium Uruli",
+      "category": "catering",
+      "image": "images/ALUMINUM-URULI-1.jpg"
+    },
+    {
+      "id": 38,
+      "name": "Arippa Kotta",
+      "category": "event",
+      "image": "images/Arippa-Kotta.jpg"
+    },
+    {
+      "id": 39,
+      "name": "Barrel",
+      "category": "catering",
+      "image": "images/barrel.jpg"
+    },
+    {
+      "id": 40,
+      "name": "Brass Rounder Uruli",
+      "category": "catering",
+      "image": "images/brass-rounder-urli.webp"
+    },
+    {
+      "id": 41,
+      "name": "Cake Stand",
+      "category": "event",
+      "image": "images/CAKE-STAND.jpg"
+    },
+    {
+      "id": 42,
+      "name": " Steel Counter",
+      "category": "event",
+      "image": "images/CANOPY-CLOTH.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Chemb",
+      "category": "catering",
+      "image": "images/chemb.png"
+    },
+    {
+      "id": 44,
+      "name": "Cooler",
+      "category": "catering",
+      "image": "images/cooler.png"
+    },
+    {
+      "id": 45,
+      "name": "Cushion Chair",
+      "category": "event",
+      "image": "images/cushion-chair.webp"
+    },
+    {
+      "id": 46,
+      "name": "Dosa/Poratta Stove",
+      "category": "catering",
+      "image": "images/DOSA-STOVE.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Fan",
+      "category": "event",
+      "image": "images/fan.webp"
+    },
+    {
+      "id": 48,
+      "name": "Fibre Plate",
+      "category": "event",
+      "image": "images/fibre.jpeg"
+    },
+    {
+      "id": 49,
+      "name": "Gas Single Stove",
+      "category": "catering",
+      "image": "images/gas-single.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Generator",
+      "category": "event",
+      "image": "images/generator.png"
+    },
+    {
+      "id": 51,
+      "name": "Glass Plate",
+      "category": "catering",
+      "image": "images/glass.webp"
+    },
+    {
+      "id": 52,
+      "name": "Grinder",
+      "category": "catering",
+      "image": "images/grinder.png"
+    },
+    {
+      "id": 53,
+      "name": "Half Barrel",
+      "category": "catering",
+      "image": "images/half-barrel.jpeg"
+    },
+    {
+      "id": 54,
+      "name": "Melamin Plate",
+      "category": "catering",
+      "image": "images/melamin.jpg"
+    },
+    {
+      "id": 55,
+      "name": "Brass artifacts",
+      "category": "event",
+      "image": "images/para-setup.jpeg"
+    }
+  ]
+}
