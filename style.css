@@ -608,7 +608,7 @@ font-family: "Lora", serif;
 }
 
 .enquiry-btn{
-    background:#d63384;
+   background-color: #d63384;
     color:#fff;
     border:none;
     border-radius:50px;
@@ -635,49 +635,3 @@ font-family: "Lora", serif;
 
 }
 
-.social-icons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
-
-.social-icons a{
-    width:50px;
-    height:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:50%;
-    background:#fff;
-    color:#d63384;
-    text-decoration:none;
-    font-size:1.3rem;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.social-icons a:hover{
-    background:#d63384;
-    color:#fff;
-    transform:translateY(-5px);
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-    .contact{
-        padding:70px 0;
-    }
-
-    .contact-box{
-        padding:25px;
-    }
-
-    .icon-circle{
-        width:60px;
-        height:60px;
-        font-size:1.2rem;
-    }
-
-}
