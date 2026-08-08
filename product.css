@@ -3,7 +3,7 @@ body {
 }
 
 #product {
-    background-color: rgb(232, 115, 171);
+    background-color: rgb(230, 170, 199);
 }
 
 .product-card {
@@ -31,7 +31,7 @@ body {
     object-fit: contain;
 }
 .product-card .btn {
-    background-color: #c16d96;
+    background-color: #e7ccd9;
     border-color: #f5eff5;
 }
 
