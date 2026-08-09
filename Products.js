@@ -5,92 +5,148 @@ const productContainer = document.getElementById("productContainer");
 const categoryTitle = document.getElementById("categoryTitle");
 const noProducts = document.getElementById("noProducts");
 const searchInput = document.getElementById("searchInput");
-const navLinks = document.querySelectorAll("#navbarMenu .nav-link");
 const navbarMenu = document.getElementById("navbarMenu");
-
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarMenu);
-
-        if (bsCollapse) {
-            bsCollapse.hide();
-        }
-
-    });
-});
 
 let allProducts = [];
 
-// Category names
-if (categoryTitle) {
-    const categoryNames = {
-        catering: "Catering & Cooking Utensils",
-        event: "Event Equipments",
-        stage: "Stage Decoration"
-    };
+/* -------------------------
+   Category Title
+------------------------- */
 
+const categoryNames = {
+    catering: "Catering & Cooking Utensils",
+    event: "Event Equipments",
+    stage: "Stage Decoration"
+};
+
+if (categoryTitle) {
     categoryTitle.textContent =
         categoryNames[category] || "All Products";
 }
 
-// Fetch products
+
+/* -------------------------
+   Mobile Navbar
+------------------------- */
+
+if (navbarMenu) {
+
+    const navLinks = navbarMenu.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            // Only close on mobile
+            if (window.innerWidth < 992) {
+
+                const bsCollapse =
+                    bootstrap.Collapse.getInstance(navbarMenu);
+
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+
+            }
+
+        });
+
+    });
+
+}
+
+
+/* -------------------------
+   Fetch Products
+------------------------- */
+
 fetch("./products.json")
-    .then(res => res.json())
+    .then(response => {
+
+        if (!response.ok) {
+            throw new Error("Products file not found");
+        }
+
+        return response.json();
+
+    })
     .then(data => {
 
         allProducts = category
-            ? data.products.filter(product => product.category === category)
+            ? data.products.filter(
+                product => product.category === category
+            )
             : data.products;
 
         displayProducts(allProducts);
 
     })
-    .catch(() => {
+    .catch(error => {
 
-        productContainer.innerHTML = `
-            <h4 class="text-center text-danger">
-                Unable to load products
-            </h4>
-        `;
+        console.error(error);
+
+        if (productContainer) {
+            productContainer.innerHTML = `
+                <div class="col-12 text-center">
+                    <h4 class="text-danger">
+                        Unable to load products
+                    </h4>
+
+                    <p class="text-muted">
+                        Please try again later.
+                    </p>
+                </div>
+            `;
+        }
 
     });
 
 
-// Display products
+/* -------------------------
+   Display Products
+------------------------- */
+
 function displayProducts(products) {
+
+    if (!productContainer) return;
 
     if (!products.length) {
 
         productContainer.innerHTML = "";
 
-        noProducts.classList.remove("d-none");
+        if (noProducts) {
+            noProducts.classList.remove("d-none");
+        }
 
         return;
     }
 
-    noProducts.classList.add("d-none");
+    if (noProducts) {
+        noProducts.classList.add("d-none");
+    }
 
     productContainer.innerHTML = products.map(product => {
 
-        // Stage doesn't show title
-        const title = product.category !== "stage"
-            ? `<h5>${product.name}</h5>`
-            : "";
+        const title =
+            product.category !== "stage"
+                ? `<h5 class="fw-bold">${product.name}</h5>`
+                : "";
+
+        const imageClass =
+            product.category === "stage"
+                ? "stage-image"
+                : "normal-image";
 
         return `
-            <div class="col-md-4 mb-4">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
 
                 <div class="card product-card h-100 shadow-sm">
 
                     <img
                         src="${product.image}"
-                        class="card-img-top product-image ${
-                            product.category === "stage"
-                                ? "stage-image"
-                                : "normal-image"
-                        }"
+                        class="card-img-top product-image ${imageClass}"
                         alt="${product.name}"
+                        loading="lazy"
                     >
 
                     <div class="card-body d-flex flex-column">
@@ -111,17 +167,23 @@ function displayProducts(products) {
         `;
 
     }).join("");
+
 }
 
 
-// Search by name
+/* -------------------------
+   Search
+------------------------- */
+
 if (searchInput) {
 
     searchInput.addEventListener("input", function () {
 
-        const searchText = this.value.toLowerCase().trim();
+        const searchText =
+            this.value.toLowerCase().trim();
 
         const filteredProducts = allProducts.filter(product =>
+            product.name &&
             product.name.toLowerCase().includes(searchText)
         );
 
